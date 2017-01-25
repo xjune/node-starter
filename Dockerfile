@@ -1,10 +1,5 @@
-FROM node:argon
+FROM runnable/node-starter
 MAINTAINER Runnable, Inc.
-
-# Cache NPM Install
-ADD package.json /app/
-WORKDIR /app/
-RUN npm install 
 
 # Add Application Files
 ADD . /app/
